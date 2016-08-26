@@ -1,12 +1,20 @@
 package dk.cphbusiness.choir.backend.mock.model;
 
-import com.google.common.collect.HashBiMap;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Member {
   private static Map<Long,Member> items = new HashMap<>();
   private static long nextId = 0;
+
+  public static Collection<Member> list() {
+    return items.values();
+    }
+  
+  public static Member find(long id) {
+    return items.get(id);
+    }
   
   private final long id;
   private String firstName;
@@ -51,8 +59,8 @@ public class Member {
     return email;
     }
 
-  public void setVoiceName(String voiceName) {
-    this.voiceName = voiceName;
+  public String getVoiceName() {
+    return voiceName;
     }
 
   }
