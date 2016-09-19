@@ -10,10 +10,9 @@
       <repository>
         <id>choir-repo</id>
         <name>Helges Repo</name>
-        <url>http://10.13.192.67:8082/artifactory</url>
+        <url>http://10.13.192.67:8082/artifactory/libs-release-local</url>
       </repository>
     </repositories>
-
 
     <dependencies>
         <dependency>
