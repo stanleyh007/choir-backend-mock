@@ -22,6 +22,13 @@ public class ChoirManagerDummy implements ChoirManager {
     for (Member member : members) summaries.add(createMemberSummary(member));
     return summaries;
     }
+
+  public ChoirManagerDummy() {
+    new Member("Anders", "Kalhauge", "anders@kalhauge.dk", "21724411", "tenor");
+    new Member("Kurt", "Hansen", "kurt@mail.dk", "12345678", "tenor");
+    }
+  
+  
   
   @Override
   public Collection<MemberSummary> listMembers() {
