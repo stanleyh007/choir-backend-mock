@@ -33,4 +33,9 @@ public class ChoirManagerDummy implements ChoirManager {
     throw new UnsupportedOperationException("No support for dk.cphbusiness.choir.backend.mock.ChoirManagerDummy#saveMember");
     }
 
+  @Override
+  public String sayHello(String name) {
+    return "Hello "+name+" from Mock backend";
+    }
+
   }
